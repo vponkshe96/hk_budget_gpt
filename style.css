@@ -1,0 +1,43 @@
+.heading {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.subheading {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.rounded-box {
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 20px;
+}
+.sourcesHeader {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sources {
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.footer {
+  font-style: italic;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContent {
+  margin-right:5px;
+  font-size: 14px;
+  color: gray;
+}
+.icon{
+  margin-right: 5px;
+}
