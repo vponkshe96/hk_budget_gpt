@@ -49,8 +49,8 @@ query = st.text_input(label = " ", placeholder= "What is the gov doing for the t
 if query:
     with st.spinner('Wait for it...'):
         st.write('<div class = "subheading">💡 Answer </div>',unsafe_allow_html=True)
-        # answer = qa_chain.run(query)
-        st.markdown(f"<div class='rounded-box'>{test_answer}</div>", unsafe_allow_html=True)
+        answer = qa_chain.run(query)
+        st.markdown(f"<div class='rounded-box'>{answer}</div>", unsafe_allow_html=True)
         st.markdown(f"<br/>", unsafe_allow_html=True)
         sources = db.similarity_search(query)
         st.write('<div class = "sourcesHeader">🔎 References</div>',unsafe_allow_html=True)
