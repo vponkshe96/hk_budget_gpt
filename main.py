@@ -58,8 +58,9 @@ if query:
             page = int(source.metadata['page']) + 1
             st.write(f"<div class = 'sources'><a href = 'https://www.budget.gov.hk/2023/eng/pdf/e_budget_speech_2023-24.pdf#page={page}' > Page {page}</a></div>", unsafe_allow_html= True)
         st.text(" ")
-        st.write('<div class = "footer"><span class = "footerContent">Created by Vinit Ponkshe (SWE)</span><a href ="https://www.linkedin.com/in/vinitponkshe/"><i class="fa-brands fa-linkedin icon " style="color: #0f62f0;"></i></a><span class = "footerContent">& Grace Tang (PM) </span><a href ="https://www.linkedin.com/in/tantingtang/"><i class="fa-brands fa-linkedin icon" style="color: #0f62f0;"></i></a></div> ',unsafe_allow_html=True)
-        # st.markdown(f'{html_code}',unsafe_allow_html= True)
+
+st.write('<div class = "footer"><span class = "footerContent">Created by Vinit Ponkshe (SWE)</span><a href ="https://www.linkedin.com/in/vinitponkshe/"><i class="fa-brands fa-linkedin icon " style="color: #0f62f0;"></i></a><span class = "footerContent">& Grace Tang (PM) </span><a href ="https://www.linkedin.com/in/tantingtang/"><i class="fa-brands fa-linkedin icon" style="color: #0f62f0;"></i></a></div> ',unsafe_allow_html=True)
+# st.markdown(f'{html_code}',unsafe_allow_html= True)
         
 
 
