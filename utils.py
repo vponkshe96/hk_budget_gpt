@@ -21,6 +21,6 @@ def fetch_embeddings(index_name, embeddings):
 
 
 def chain_config(db, chain_type, OPENAI_API_KEY):
-    llm = OpenAI(openai_api_key= OPENAI_API_KEY, temperature= 0,streaming=True, callback_manager=CallbackManager([StreamingStdOutCallbackHandler()])) 
+    llm = OpenAI(openai_api_key= OPENAI_API_KEY, temperature= 0) 
     qa = RetrievalQA.from_chain_type(llm = llm, chain_type = chain_type, retriever=db.as_retriever())
     return qa
