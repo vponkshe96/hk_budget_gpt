@@ -2,8 +2,6 @@ import tiktoken
 from langchain.vectorstores import Pinecone
 from langchain import OpenAI
 from langchain.chains import RetrievalQA
-from langchain.callbacks.base import CallbackManager
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 tokenizer = tiktoken.get_encoding('cl100k_base')
 
